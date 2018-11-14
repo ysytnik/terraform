@@ -1,10 +1,4 @@
-terraform {
-  backend "consul" {
-    address = "demo.consul.io"
-    path    = "getting-started-ysyter"
-    lock    = false
-    scheme  = "https"
-  }
+
 provider "aws" {
   access_key = "${var.access_key}"
   secret_key = "${var.secret_key}"
